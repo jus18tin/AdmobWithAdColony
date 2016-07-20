@@ -19,11 +19,11 @@
 
 - (void)viewDidLoad {
   [super viewDidLoad];
-  // Do any additional setup after loading the view, typically from a nib.
   
-  [GADMAdapterAdColonyInitializer startWithAppID:@"appbdee68ae27024084bb334a"
-                                       andZones:@[@"vzf8fb4670a60e4a139d01b5"]
-                                     andCustomID:nil];
+  // Not A Must. you can initialize the AdColony SDK early on in the application lifecycle and outside of the Google Mobile Ads SDK.
+//  [GADMAdapterAdColonyInitializer startWithAppID:@"appbdee68ae27024084bb334a"
+//                                       andZones:@[@"vzf8fb4670a60e4a139d01b5"]
+//                                     andCustomID:nil];
   
   [GADRewardBasedVideoAd sharedInstance].delegate = self;
   [[GADRewardBasedVideoAd sharedInstance] loadRequest:[GADRequest request]
